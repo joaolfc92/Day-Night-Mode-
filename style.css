@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+body{
+    transition: 0.5s;
+}
+
+body.night{
+    background: #00151f !important;
+    
+}
+
+.toggle{
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    background: #fff;
+    border:2px solid black;
+    width: 45px;
+    height: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.toggle.active{
+     background: #00151f;
+     border:2px solid #fff;
+}
+
+.toggle:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background:#00151f;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.toggle.active:before{
+    background: #fff;
+}
+
+.toggle.active:before{
+    left: 23px;
+    
+}
+
+   
+section{
+    position: absolute;
+    top:0;
+    left: 0;
+    min-height: 100vh;
+    padding: 80px 100px;
+}
+
+.content img{
+    max-width: 500px;
+    float: left;
+    margin: 10px 20px 10px 0;
+    filter: inherit;
+}
+
+.content h2{
+    margin: 0 0 20px;
+    padding: 0;
+    color:#000;
+    transition: 0.5S;
+    font-size: 100px;
+}
+
+.content p {
+    margin: 0;
+    padding: 0;
+    color:#000;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+body.night .content h2{
+    color:white;
+    font-size: 100px;
+} 
+
+body.night .content p{
+    color: white;
+}
